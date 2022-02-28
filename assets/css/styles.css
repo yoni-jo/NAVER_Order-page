@@ -198,3 +198,24 @@ textarea::-webkit-outer-spin-button {
   color: #fff;
   border-radius: 28px;
 }
+
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #03c75a;
+  color: #fff;
+  padding: 0 18px;
+}
+
+.header-area .place-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-area .place-header .title {
+  font-size: 20px;
+  font-weight: 600;
+}
