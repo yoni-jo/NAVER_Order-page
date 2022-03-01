@@ -1,22 +1,71 @@
 .header-area {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: $booking-color-text105;
-    color: #fff;
-    padding: 0 $m-padding;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: $booking-color-text105;
+   color: #fff;
 
-    .place-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+   .place-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: $place-header-height;
+      padding: 0 $m-padding;
 
-        .title {
-            font-size: 20px;
-            font-weight: 600;
-        }
+      .title {
+         font-size: 20px;
+         font-weight: 600;
+      }
 
-        .my-orders {}
-    }
+      .my-orders {}
+   }
+
+   .place-tap {
+      display: flex;
+      height: $place-tab-height;
+      background-color: #03b753;
+
+      .tab-inner {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         .tab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            opacity: .7;
+            font-size: 16px;
+
+            &.is-active {
+               opacity: 1;
+               font-weight: 700;
+                .txt::after{
+                  content: "";
+                  width: 100%;
+                  position: absolute;
+                  bottom:0;
+                  left: 0;
+                  height: 2px;
+                  background-color: #fff;
+                  
+               }
+            }
+
+            .txt {
+               padding: 0 4px;
+               display: inline-block;
+               position: relative;
+               line-height: $place-tab-height;
+            }
+         }
+      }
+
+   }
 }
