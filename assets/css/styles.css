@@ -1,3 +1,16 @@
+.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   min-width: 320px;
   line-height: normal;
@@ -258,7 +271,7 @@ textarea::-webkit-outer-spin-button {
   bottom: 0;
   left: 0;
   height: 2px;
-  background-color: fff;
+  background-color: #fff;
 }
 
 .header-area .place-tap .tab-inner .tab .txt {
