@@ -258,7 +258,7 @@ textarea::-webkit-outer-spin-button {
   bottom: 0;
   left: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: fff;
 }
 
 .header-area .place-tap .tab-inner .tab .txt {
