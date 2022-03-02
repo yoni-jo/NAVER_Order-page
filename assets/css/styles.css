@@ -315,16 +315,18 @@ textarea::-webkit-outer-spin-button {
 
 .tab-switch-box .tab-switch {
   flex: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 11px 0 8px;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
 }
 
 .tab-switch-box .tab-switch.is-active {
   background-color: #fff;
-  font-weight: 700;
+  font-weight: 900;
   border: 1px solid black;
 }
 
@@ -340,6 +342,32 @@ textarea::-webkit-outer-spin-button {
   left: 50%;
   bottom: -6px;
   transform: translateX(-50%) rotate(45deg);
+}
+
+.tab-switch-box .tab-switch.is-active .ico-check {
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.ico-check {
+  display: none;
+}
+
+.info-main-notice {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 2px;
+  background-color: #fff;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.info-main-notice.alert {
+  color: #ff3d3b;
+  font-weight: 700;
 }
 
 .order-info-area {

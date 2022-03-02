@@ -14,52 +14,79 @@
             font-weight: 700;
             letter-spacing: -0.3px;
             color: $booking-color-text6;
-           }
-            .ico-n-logo {
-                margin-right: 6px;
-                width: 24px;
-                height: 24px;
-            }
-
         }
+
+        .ico-n-logo {
+            margin-right: 6px;
+            width: 24px;
+            height: 24px;
+        }
+
     }
+}
 
-    // 주문분류
+// 주문분류
 
-    .tab-switch-box {
-        margin-top: 12px;
+.tab-switch-box {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+
+    .tab-switch {
+        flex: 1;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .2);
+        padding: 11px 0 8px;
+        font-weight: 600;
+        position: relative;
 
-        .tab-switch {
-            flex: 1;
-            text-align: center;
-            background-color: rgba(0,0,0,.2);
-            padding: 11px 0 8px;
-            font-weight: 500;
-            position: relative;
-           
-            &.is-active{
-                background-color: #fff;
-                font-weight: 700;
-                border: 1px solid black;
-                &::after{
-                content:"";
+        &.is-active {
+            background-color: #fff;
+            font-weight: 900;
+            border: 1px solid black;
+
+            &::after {
+                content: "";
                 position: absolute;
                 width: 10px;
                 height: 10px;
                 background-color: inherit;
-                border-top:1px solid transparent;
+                border-top: 1px solid transparent;
                 border-bottom: 1px solid black;
                 border-right: 1px solid black;
                 left: 50%;
-                bottom:-6px;
+                bottom: -6px;
                 transform: translateX(-50%) rotate(45deg);
-                
+
             }
+
+            .ico-check {
+                display: inline-block;
+                margin-left: 4px;
+
             }
         }
     }
+}
 
-    .info-main-notice {}
+.ico-check {
+    display: none;
+}
 
+.info-main-notice {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color:#333;
+    &.alert{
+        color:$point-color;
+        font-weight: 700;
+    }
+}
