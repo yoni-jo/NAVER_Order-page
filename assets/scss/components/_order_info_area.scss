@@ -1,0 +1,65 @@
+.order-info-area {
+    padding: 10px $m-padding 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    background: $booking-color-bg155;
+
+    .info-main-title {
+        margin-top: 12px;
+        line-height: 39px;
+
+        .title {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: $booking-color-text6;
+           }
+            .ico-n-logo {
+                margin-right: 6px;
+                width: 24px;
+                height: 24px;
+            }
+
+        }
+    }
+
+    // 주문분류
+
+    .tab-switch-box {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+
+        .tab-switch {
+            flex: 1;
+            text-align: center;
+            background-color: rgba(0,0,0,.2);
+            padding: 11px 0 8px;
+            font-weight: 500;
+            position: relative;
+           
+            &.is-active{
+                background-color: #fff;
+                font-weight: 700;
+                border: 1px solid black;
+                &::after{
+                content:"";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: inherit;
+                border-top:1px solid transparent;
+                border-bottom: 1px solid black;
+                border-right: 1px solid black;
+                left: 50%;
+                bottom:-6px;
+                transform: translateX(-50%) rotate(45deg);
+                
+            }
+            }
+        }
+    }
+
+    .info-main-notice {}
+
