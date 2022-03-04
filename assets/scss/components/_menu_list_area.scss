@@ -1,0 +1,40 @@
+.menu-list-area {
+    padding: 28px $m-padding 10px;
+    background-color: #fff;
+
+    &:not(.new):not(.popular) {
+        margin-top: 10px;
+    }
+
+    .common-inner {
+        border-bottom: 1px solid $booking-color-border144;
+        padding-bottom: 10px;
+    }
+
+    &.new {}
+
+    .ico-arrow {
+        transform: rotate(180deg);
+    }
+
+    &.is-closed {
+        padding: 24px $m-padding;
+
+        &+.is-closed {
+            margin-top: 0;
+        }
+
+        .ico-arrow {
+            transform: rotate(0deg);
+        }
+        .menu-list{
+            display: none;
+        }
+    }
+
+    .menu-category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
