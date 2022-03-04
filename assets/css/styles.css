@@ -378,7 +378,30 @@ textarea::-webkit-outer-spin-button {
 }
 
 .menu-category-area .common-inner {
+  position: relative;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.menu-category-area .common-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 100%;
+  pointer-events: none;
+  left: 0;
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+}
+
+.menu-category-area .common-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 100%;
+  pointer-events: none;
+  right: 0;
+  background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
 }
 
 .menu-category-area .category-list {
