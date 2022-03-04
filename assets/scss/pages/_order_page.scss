@@ -1,8 +1,13 @@
-.order-info-area{
+.container {
+    background-color: $booking-color-border151;
+}
+
+.order-info-area {
     padding-top: $place-header-height+$place-tab-height;
 
 }
-.common-inner{
+
+.common-inner {
     margin: 0 auto;
     max-width: 720px;
 }
