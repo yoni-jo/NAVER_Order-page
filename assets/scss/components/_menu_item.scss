@@ -1,4 +1,3 @@
-
 .menu-item {
     display: flex;
     justify-content: space-between;
@@ -13,7 +12,7 @@
     .menu-detail {
         display: flex;
         flex: 1;
-    align-items: center;
+        align-items: center;
     }
 
     .menu-img-area {
@@ -39,34 +38,38 @@
         display: block;
     }
 
-    .menu-desc{
+    .menu-desc {
         margin-top: 4px;
         letter-spacing: -0.4px;
-        color:$booking-color-text5;
-        @include multi-ellipsis(14px,19px,2);
+        color: $booking-color-text5;
+        @include multi-ellipsis(14px, 19px, 2);
     }
 
-    .menu-price{
-        margin-top: 4px;line-height: 1.4;
+    .menu-price {
+        margin-top: 4px;
+        line-height: 1.4;
         font-size: 15px;
         font-weight: 700;
-        color:$point-color;
+        color: $point-color;
     }
-    .btn-cart{
+
+    .btn-cart {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 40px;
         height: 40px;
-        border:1px solid $booking-color-border150;
+        border: 1px solid $booking-color-border150;
         border-radius: 5px;
         margin-left: 16px;
-        .ico-cart{
+
+        .ico-cart {
             width: 20px;
             height: 20px;
         }
-        .num{
+
+        .num {
             position: absolute;
             top: 3px;
             right: 3px;
@@ -77,8 +80,17 @@
             font-size: 12px;
             font-weight: 700;
             text-align: center;
-            color:#fff;
+            color: #fff;
             border-radius: 50%;
+        }
+
+        &.disabled {
+            font-size: 12px;
+            border: 0;
+            background-color: #eee;
+            color:#777;
+            cursor: not-allowed;
+            pointer-events: none;
         }
     }
 }
@@ -115,8 +127,9 @@
     .menu-grade {
         font-weight: 700;
         color: $booking-color-text6;
-        
-    flex-shrink: 0;
+
+        flex-shrink: 0;
+
         .ico-star {
             margin-right: 2px;
         }
@@ -135,14 +148,15 @@
     }
 
     .menu-number-of-order {
-        color:$booking-color-text5;
-        
-    flex-shrink: 0;
-        em{
+        color: $booking-color-text5;
+
+        flex-shrink: 0;
+
+        em {
             margin-left: 4px;
             font-style: normal;
             font-weight: 700;
-            color:$booking-color-text6;
+            color: $booking-color-text6;
         }
     }
 
