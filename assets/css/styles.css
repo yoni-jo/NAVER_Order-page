@@ -473,10 +473,38 @@ textarea::-webkit-outer-spin-button {
   display: none;
 }
 
-.menu-list-area .menu-category {
+.menu-list-area .title-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-list-area .title-area .title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: .3px;
+}
+
+.menu-list-area .period {
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list-area .period::before {
+  content: '';
+  display: inline-block;
+  margin: 0 10px;
+  width: 4px;
+  height: 4px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #ededed;
 }
 
 .container {
