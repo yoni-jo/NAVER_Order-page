@@ -6,11 +6,6 @@
         margin-top: 10px;
     }
 
-    .common-inner {
-        border-bottom: 1px solid $booking-color-border144;
-        padding-bottom: 10px;
-    }
-
     &.new {}
 
     .ico-arrow {
@@ -33,8 +28,9 @@
     }
 
     .menu-category {
-
+border-bottom: 1px solid $booking-color-border144;
         
+        padding-bottom: 10px;
     }
     .title-area{
         display: flex;

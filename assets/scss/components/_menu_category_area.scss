@@ -3,6 +3,7 @@
     top: $place-header-height+$place-tab-height;
     margin-top: 10px;
     background-color: #fff;
+    z-index: 9999999;
 
     .common-inner {
         position: relative;
@@ -22,7 +23,7 @@
         }
 
         &::after {
-           content: "";
+            content: "";
             position: absolute;
             top: 0;
             width: $m-padding;
