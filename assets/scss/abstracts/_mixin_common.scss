@@ -1,3 +1,10 @@
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
 @mixin multi-ellipsis($font-size,$line-height,$lines){
     
     font-size:$font-size ;
