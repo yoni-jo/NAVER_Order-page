@@ -871,7 +871,8 @@ textarea::-webkit-outer-spin-button {
   transform: translateY(1px);
 }
 
-.menu-detail-area .menu-info-area .menu-info-group .menu-grade, .menu-detail-area .menu-info-area .menu-info-group .menu-number-of-order {
+.menu-detail-area .menu-info-area .menu-info-group .menu-grade,
+.menu-detail-area .menu-info-area .menu-info-group .menu-number-of-order {
   line-height: 24px;
 }
 
@@ -880,6 +881,80 @@ textarea::-webkit-outer-spin-button {
   font-size: 15px;
   line-height: 22px;
   color: #333;
+}
+
+.menu-detail-area .order-type-area {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.menu-detail-area .order-type-area .type-select,
+.menu-detail-area .order-type-area .type-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-detail-area .order-type-area .type-select .title {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.menu-detail-area .order-type-area .type-select .ico-n-logo {
+  margin-right: 4px;
+  width: 20px;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch-box {
+  margin-top: 0;
+  width: 160px;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch {
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch.is-active {
+  flex: 1;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch.is-active::after {
+  display: none;
+}
+
+.menu-detail-area .order-type-area .type-amount {
+  margin-top: 20px;
+}
+
+.menu-detail-area .order-type-area .type-amount .title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.menu-detail-area .order-type-area .btn-order {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  line-height: 46px;
+  border-radius: 3px;
+  font-weight: 700;
+  background-color: #01d760;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-detail-area .order-type-area .btn-order:disabled {
+  background-color: #c9c9c9;
+  color: #fff;
 }
 
 .container {
